@@ -1,0 +1,112 @@
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/ClientDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/resDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/mouseovers.js"></script>  
+
+<script type="text/javascript" language="JavaScript"><!--
+function loadPlantype() {
+chosen = false;
+
+for(var i = 0; i < document.signmeup.PROMO.length; i++) {
+
+   if(document.signmeup.PROMO[i].checked == true) {
+		
+		// get promocode from selected radio
+		zPROMO		=	document.signmeup.PROMO[i].value;
+		
+		// load c01 root for environmental switches
+		zC01Root	=	"http%3A%2F%2F10.1.2.138%3A5700%2F";
+		
+		// pass validation
+		chosen = true;
+		
+		// compare promo and assign a plantype
+		switch(zPROMO)
+		{
+			case "BMB03000USD0":
+			  zPLANTYPE	=	"MEMBER";
+			  zSpecialOfferPage	=	zC01Root+"sales%2Fspecial_offer%2F";
+			  break;
+			case "BUG03USD1":
+			  zPLANTYPE	=	"UNLIMITED";
+			  break;
+			default:
+			  //do-nada
+		};
+		
+		// populate the plantype field
+		document.signmeup.PLANTYPE.value=zPLANTYPE;
+		
+		// special case for free offers - pass landing page param for these for UC11 flow to start
+		if(zSpecialOfferPage)	{
+			
+			// create the field
+			zForm		=	document.signmeup;
+			var el 		=	document.createElement("input");
+			el.type 	= 	"hidden";
+			el.name 	= 	"specialOfferLandingPage";
+			el.value 	= 	zSpecialOfferPage;
+			zForm.appendChild(el);
+		}
+		
+		// submit form
+		document.signmeup.submit();
+	}
+}
+
+// fail validation
+if(chosen == false) {
+   alert('An age must be checked.');
+}
+}
+   
+
+
+//--></script>
+
+
+<html>
+	<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+		<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <meta name="robots" content="noindex,nofollow">
+		<script type="text/javascript">viewportAndCss(getAgent())</script>
+<!--[if IE]>
+    <script type="text/javascript">viewportAndCssIE(getAgent())</script>
+<![endif]-->
+	</head>
+<body class="bar">
+	<div id="logo"><img src="/shared/img/cdot.gif"></div>
+    
+	<div class="container" id="planSelection">
+    	<div id="hj-head-signup"></div>
+            	            <div id="s-row">
+
+            	<div class="icon-m" id="icon-free">
+					<a href="http://10.103.0.65:8080/signup/SignupStart.app?mode=memberClient&specialOfferLandingPage=http%3A%2F%2F10.1.2.138%3A5700%2Fsales%2Fspecial_offer%2F&PROMO=BMB03000USD0&SCC=32838&PLANTYPE=MEMBER"><img src="/shared/img/cdot.gif" height="50" width="50"></a>                </div>
+             	<div id="s-description">
+					<a href="http://10.103.0.65:8080/signup/SignupStart.app?mode=memberClient&specialOfferLandingPage=http%3A%2F%2F10.1.2.138%3A5700%2Fsales%2Fspecial_offer%2F&PROMO=BMB03000USD0&SCC=32838&PLANTYPE=MEMBER">FREE HOTSPOT MAPS<p>Map thousands of free and for-pay Wi-Fi hotpots worldwide!</p></a>                </div>
+                <br clear="all" />
+            	<div><hr id="s-hr"></div>            </div>
+
+                        <div id="s-row">
+            	<div class="icon-m" id="icon-all-access-iphone">
+					<a href="http://10.103.0.65:8080/signup/SignupStart.app?mode=memberClient&PROMO=BOM01795USD0&SCC=32838&PLANTYPE=MOBILE"><img src="/shared/img/cdot.gif" height="50" width="50"></a>                </div>
+             	<div id="s-description">
+					<a href="http://10.103.0.65:8080/signup/SignupStart.app?mode=memberClient&PROMO=BOM01795USD0&SCC=32838&PLANTYPE=MOBILE">BOINGO <strong>MOBILE</strong><p>Access Wi-Fi at thousands of Boingo hotspots, such as airports, hotels, caf&eacute;s, convention centers and more! Only $7.95 USD per month.</p></a>                </div>
+                <br clear="all" />
+
+            	<div><hr id="s-hr"></div>            </div>
+                        <div id="s-row">
+            	<div class="icon-m" id="icon-account">
+					<a href="#" onClick="external.credentialBox()"><img src="/shared/img/cdot.gif" height="50" width="50"></a>                </div>
+             	<div id="s-description">
+					<a href="#" onClick="external.credentialBox()">Account Holders<p>Already have an account? Click here to enter your username and password.</p></a>                </div>
+
+                <br clear="all" />
+            	            </div>
+                 		<div id="s-graphic"></div>
+	</div>
+	 
+</body>
+</html>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_imgResults" value="name:id;datatype:int,name:directory;datatype:string,name:image;datatype:string,name:width;datatype:int,name:height;datatype:int,name:type;datatype:int,name:attribute;datatype:string" />
+	<infoitem key="UD_dirResults" value="name:directory;datatype:string" />
+</info>

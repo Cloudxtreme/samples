@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/jquery-1.4.1.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+// $('div.error').html().trim().length
+
+var pg_error = $('div.error').html();
+var pg_error2 = $.trim(pg_error).length;
+
+alert(pg_error2);
+
+})
+</script>
+</head>
+
+<body>
+
+<div class="error">
+hhh
+</div>
+
+</body>
+</html>

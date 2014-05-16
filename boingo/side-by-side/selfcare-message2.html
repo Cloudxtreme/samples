@@ -1,0 +1,40 @@
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/ClientDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/resDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/mouseovers.js"></script>  
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="robots" content="noindex,nofollow">
+<script type="text/javascript">viewportAndCss(getAgent())</script>
+<!--[if IE]>
+    <script type="text/javascript">viewportAndCssIE(getAgent())</script>
+<![endif]-->
+</head>
+<body class="bar">
+	<div id="logo"><img src="/shared/img/cdot.gif"></div>
+    
+	<div class="container" id="bms">
+		        <div id="bms-bkgd">
+			<div id="bms-bkgd-container">
+				<h1>This is a Premium Hotspot</h1>
+				<div id="bms-copy">
+					This location is not included in your free membership. To connect here, plus 125,000 more Boingo hotspots, select "Continue" and choose the Boingo plan that's right for you.				
+        		</div>
+        <div class="backButton">
+		<button class="submitBtn l" onClick="external.close();"><span>No Thanks</span></button>
+				<form method="POST" action="http://10.103.0.65:8080/selfcare2/j_spring_security_check?mode=clientselfcare" name="selfCarePost">
+					<input type="hidden" name="j_username" id="j_username" value=""/>
+					<input type="hidden" name="j_password" id="j_password" value=""/>
+					<input type="hidden" name="feature" value="planChange" >
+					<input type="hidden" name="PROMO" id="PROMO" value="BUG03USD1"/>
+					<input type="hidden" name="locationId" id="locationId" value=""/>
+					<input type="hidden" name="mode" id="mode" value="clientselfcare"/>
+					<button class="submitBtn r" onClick="document.selfCarePost.submit()"><span>Continue</span></button>
+        		</form>
+        	
+			</div>
+		</div>	</div>
+</body>
+</html>

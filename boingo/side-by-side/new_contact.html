@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/ClientDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/resDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/mouseovers.js"></script>  
+<script type="text/javascript">viewportAndCss(getAgent())</script>
+<!--[if IE]>
+    <script type="text/javascript">viewportAndCssIE(getAgent())</script>
+<![endif]-->
+<script type="text/javascript">
+  
+function onLoad()
+{
+	var td;
+	td = document.getElementById('IP');
+	td.innerHTML = window.external.getIP();
+	td = document.getElementById('SSID');
+	td.innerHTML = window.external.getSSID();
+	td = document.getElementById('BSSID');
+	td.innerHTML = window.external.getBSSID();
+	td = document.getElementById('LastError');
+	td.innerHTML = window.external.getLastError();
+	td = document.getElementById('SoftwareVersion');
+	td.innerHTML = window.external.getSoftwareVersion();
+	td = document.getElementById('ClientMac');
+	td.innerHTML = window.external.getClientMac();
+	td = document.getElementById('DirectoryVersion');
+	td.innerHTML = window.external.getDirectoryVersion();
+}
+</script>
+
+</head>
+<body class="bar" onload='onLoad();'>
+<div id="logo"><img src="/shared/img/cdot.gif"></div>
+
+	<div class="container" id="contact">
+        <div id="contact-info">
+
+            <h2>Boingo Customer Care <br>Available 24/7</h2>
+            <div class="contact-box" id="na">
+            	<h4><br>E-Mail</h4>
+            	<p class="phone"><a href="mailto:support@boingo.com">support@boingo.com</a></p>
+            </div>
+            <div class="contact-box" id="na">
+            	<h4>From North America</h4>
+
+            	<p class="phone">1.800.880.4117</p>
+            </div>
+            <div class="contact-box" id="uk">
+            	<h4>From the UK</h4>
+            	<p class="phone">00.800.8804.1170</p>
+            </div>
+            <div class="contact-box" id="japan">
+
+            	<h4>From Japan</h4>
+            	<p class="phone">010.880.8804.41170</p>
+            	<p class="prefix">Prefix for Softbank: 0061</p>
+            	<p class="prefix">Prefix for KDD: 001</p>
+            	<p class="prefix">Prefix for NTT: 0033</p>
+            </div>
+
+            <div class="contact-box" id="japan">
+            	<h4>From locations outside of North America, UK, and Japan</h4>
+            <p class="phone">00.800.2646.4646</p>
+        </div>
+    </div>
+    <table width="100%" id="table-cc">
+        <tr>
+            <th colspan="2" class="contact-header">
+
+                The information below will help your Boingo Customer Care agent diagnose the problem.
+            </th>
+        </tr>
+        <tr class="contact-row" id='contact-row-type-0'>
+            <td>IP Address</td>
+            <td width="50%" id="IP"></td>
+        </tr>
+        <tr class="contact-row" id='contact-row-type-1'>
+            <td>SSID</td>
+
+            <td width="50%" id="SSID"></td>
+        </tr>
+        <tr class="contact-row" id='contact-row-type-0'>
+            <td>BSSID</td>
+            <td width="50%" id="BSSID"></td>
+        </tr>
+        <tr class="contact-row" id='contact-row-type-1'>
+            <td>Last Error</td>
+
+            <td width="50%" id="LastError"></td>
+        </tr>
+        <tr class="contact-row" id='contact-row-type-0'>
+            <td>Software Version</td>
+            <td width="50%" id="SoftwareVersion"></td>
+        </tr>
+        <tr class="contact-row" id='contact-row-type-1'>
+            <td>Mac Address</td>
+
+            <td width="50%" id="ClientMac"></td>
+        </tr>
+        <tr class="contact-row" id='contact-row-type-0'>
+            <td>Directory Version</td>
+            <td width="50%" id="DirectoryVersion"></td>
+        </tr>
+    </table>
+    <div id="button-container-cc" style="margin-top: 20px;">
+
+        <button value="j_submit" class="submitBtn" onClick="external.close();"><span>Close</span></button>
+    </div>
+
+	</div>
+</body></html>

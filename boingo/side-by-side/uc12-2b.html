@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" >
+
+<html>
+<head>
+	<!-- Membership Client -->
+	
+	<title>Boingo Wireless | Signup </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+	<meta name="keywords" content="wireless plan,wireless internet provider,wireless internet access,wireless internet connection,wireless internet service provider,wireless internet card,compare wireless plan,best wireless plan,broadband wireless internet,mobile internet access,mobile internet service,wireless service plan,mobile wireless plan,wireless internet company,mobile internet connection,free wireless hotspots,wi fi service,wifi service,wireless mobile internet service,wireless interet plan,pay as you go wireless plan,free wi fi hotspots">
+	<meta name="description" content="Wireless Plans at Boingo. Specializing in wireless internet providers, wireless internet access, wireless internet connections and wireless internet service providers">
+	<meta name="robots" content="index,follow">
+	<!-- Wireless Plan, Wireless Internet Provider, Wireless Internet Access, Wireless Internet Connection, Wireless Internet Service Provider -->
+	<script language="JavaScript" src="http://10.1.2.131:8888/shared/jscript/SignupScriptTop.js"></script>
+	
+	<link rel="icon" type="image/ico" href="http://10.1.2.131:8888/shared/img/b.ico">
+
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/ClientDetect.js"></script>
+
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/resDetect.js"></script>
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/mouseovers.js"></script>
+	<script src="http://10.1.2.131:8888/signup/jscript/jquery.periodicalupdater.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">viewportAndCss(getAgent())</script>
+<!--[if IE]>
+    <script type="text/javascript">viewportAndCssIE(getAgent())</script>
+<![endif]-->
+
+	
+	
+
+
+	
+<meta name="containerId" content="planSelection"/>
+
+
+
+<script type="text/javascript" src="jscript/jquery-1.4.1.min.js" ></script>
+
+
+<!-- Selects the dynamicly created plan when triggered -->
+<script Language="JavaScript">			
+	function selectPlan(showPopup, i) {
+		if (i >= 0) {
+			if (document.planSelectionForm.planId.length > 0) {
+				document.planSelectionForm.planId[i].checked = true;
+			} else {
+				document.planSelectionForm.planId.checked = true;
+			}
+		}
+	}
+
+		
+	function submitForm(updatePromo) {
+		if (updatePromo) {
+			document.planSelectionForm.updatePromo.value = true;
+		}
+		$('form').submit();
+	
+	}
+</script>
+
+
+
+
+
+<script type="text/javascript">
+<!--
+var currencyLocal={"CAD":["en"],"CHF":["en"],"JPY":["en"],"NTD":["en"],"MXN":["en"],"GBP":["en"],"EUR":["en"],"USD":["en"]};
+$(function(){
+$(':radio[name=currency]').live( "change", function(event){
+	$(':radio[name=locale]').each(function(i,element){
+		var supportedLocalArray=currencyLocal[event.target.value];
+		if($.inArray(element.value,supportedLocalArray) < 0){
+			$(element).attr("disabled","disabled").closest(".radioField").hide();
+			
+		}else{
+			$(element).removeAttr("disabled").closest(".radioField").show();
+			
+		}
+	})
+
+	if($(':radio[name=locale]:disabled:checked').size()>0){
+		$(':radio[name=locale]:enabled')[0].checked=true;
+	};
+
+});
+});
+//-->
+</script>
+</head>
+<body  class="bar" id="location" onLoad="">
+<!-- client -->
+	<div id="logo"><img src="http://10.1.2.131:8888/shared/img/cdot.gif"></div>
+
+	<div class="container" id="planSelection">
+		<div id="left_content_area_sub" style="">
+	
+  <div class="boingo_sub_contentBox_head"><h2>Select from these convenient plans: </h2></div>
+ 
+  <div class="boingo_sub_contentBox_content">
+    <div class="contentcontainer">
+
+	  <form id="command" name="planSelectionForm" action="PlanSelection.app" method="post">
+		<div class="error"></div>
+		
+		<input id="username" name="username" type="hidden" value=""/>				
+		<input id="updatePromo" name="updatePromo" type="hidden" value="false"/>
+		<input id="promotionCodeString" name="promotionCodeString" type="hidden" value="BUG03USD1"/>	
+		
+		<div class="bluebox">
+		
+			
+				
+							 	
+
+			 	
+					
+					
+						<h3 class="noLeftMargin"><a href=""><div class="mboxDefault">Boingo Unlimited </div>
+								</a></h3>
+						<div class="whitebox">
+
+							<div class="twocol">
+								<div class="upperleftcol">
+								
+								
+								<input id="planId1" name="planId" onClick="selectPlan(false)" type="radio" value="2870324" checked="checked"/>
+								
+								</div>
+								<div class="upperrightcol"><div class="mboxDefault">Enjoy unlimited Wi-Fi access on your laptop at thousands of Boingo hotspots throughout the Americas for only $9.95 USD each month. Please note, this is a recurring subscription, but Boingo is flexible, so you can change your plan at any time.  Wi-Fi connections made outside the Americas will be billed an additional $0.12 or $0.18 per minute, depending on location.</div>
+										</div>
+								<div class="ClearBoth"></div>
+							</div>
+
+							<div class="ClearBoth"></div>
+						</div>
+					
+				
+			
+				
+							 	
+
+			 	
+					
+					
+						<h3 class="noLeftMargin"><a href=""><div class="mboxDefault">Boingo Global - Combo </div>
+								</a></h3>
+						<div class="whitebox">
+							<div class="twocol">
+								<div class="upperleftcol">
+								
+								
+								<input id="planId2" name="planId" onClick="selectPlan(false)" type="radio" value="8450816"/>
+
+								
+								</div>
+								<div class="upperrightcol"><div class="mboxDefault">Enjoy up to 2,000 minutes of Wi-Fi access per month on your laptop or smartphone at Boingo hotspots worldwide for only $59 USD per month. Please note, this is a recurring subscription, but Boingo is flexible, so you can change your plan at any time.</div>
+										</div>
+								<div class="ClearBoth"></div>
+							</div>
+							<div class="ClearBoth"></div>
+						</div>
+						<div class="whitebox">
+						  <div class="ClearBoth"></div>
+						</div>
+					
+					
+				
+			
+	
+				
+			<div id="regionSelection">
+			
+				
+					
+				
+				
+					
+				
+				</div>
+				
+				
+				
+			<div class="ClearBoth"></div>
+	
+			<div class="backbutton" id="bottom-button-container">
+				
+				<a id="backButton" name="backButton"  class="submitBtn"  href="/signup/SelectCountry.app"><span>BACK</span></a>
+
+				
+                <button id="nextButton" value="next" class="submitBtn n"  type="submit"><span>NEXT</span></button>
+			</div>
+			<br />
+		</div>
+	  </form>
+	</div>
+  </div>
+
+
+
+
+<div class="boingo_sub_contentBox_foot">&nbsp;</div>
+</div>
+<div id="right_content_area_sub" />
+</div>
+	</div>	
+</body>
+</html>

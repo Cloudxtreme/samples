@@ -1,0 +1,191 @@
+<script type="text/javascript">
+
+function gup(name)
+	{
+	  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+	  var regexS = "[\\?&]"+name+"=([^&#]*)";
+	  var regex = new RegExp( regexS );
+	  var results = regex.exec( window.location.href );
+	  if( results == null )
+		return "";
+	  else
+		return results[1];
+	}
+	var zSCC	=	gup("SCC");
+	
+		var zProtocol			=	"http://";
+			var zHTTP_HOST			=	"10.1.2.131:8888";
+	var zREQUEST_URI		=	"/shared/membership/index2.php?mode=offline-";
+	var zQUERY_STRING		=	"mode=offline-";
+	var zLandingPage		=	zProtocol+zHTTP_HOST+zREQUEST_URI+"?"+zQUERY_STRING;
+</script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/commonText.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/ClientDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/resDetect.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/mouseovers.js"></script>  
+
+
+<script type="text/javascript" language="JavaScript"><!--
+function loadPlantype() {
+var chosen = false;
+
+for(var i = 0; i < document.signmeup.PROMO.length; i++) {
+
+   if(document.signmeup.PROMO[i].checked == true) {
+		
+		// get promocode from selected radio
+		var zPROMO				=	document.signmeup.PROMO[i].value;
+		
+		// load c01 root for environmental switches
+		var zC01Root			=	"http://10.1.2.131:8888/";
+		
+		// pass validation
+		chosen = true;
+		
+		// compare promo and assign a plantype
+		switch(zPROMO)
+		{
+			case "BMB03000USD0":
+			  var zPLANTYPE			=	"MEMBER";
+			  var zSpecialOfferPage	=	zC01Root+"sales/special_offer/";
+			  var zLandingPage		=	zProtocol+zHTTP_HOST+zREQUEST_URI+"?"+zQUERY_STRING;
+			  break;
+			case "BUL01090USD0":
+			  var zPLANTYPE	=	"UNLIMITED";
+			  break;
+			case "BOG0101USD0":
+			  var zPLANTYPE	=	"UNLIMITED";
+			  break;
+			case "BUG03USD1":
+			  var zPLANTYPE	=	"UNLIMITED";
+			  break;
+			case "AYM01795USD0":
+			  var zPLANTYPE	=	"AYG";
+			  break;
+			case "GLB0101USD4":
+			  var zPLANTYPE	=	"AYG";
+			  break;
+			case "BUL01090USD2":
+			  var zPLANTYPE	=	"AYG";
+			  break;
+			case "BOG0101USD0":
+			  var zPLANTYPE	=	"UNLIMITED";
+			  break;
+			case "AYM01795USD0":
+			  var zPLANTYPE	=	"AYG";
+			  break;
+			default:
+			  //do-nada
+		};
+		
+		// populate the plantype field
+		document.signmeup.PLANTYPE.value=zPLANTYPE;
+		
+		// populate the SCC field
+		document.signmeup.SCC.value=zSCC;
+		
+		// special case for free offers - pass landing page param for these for UC11 flow to start
+		if(zSpecialOfferPage)	{
+			
+			// create the field
+			var zForm		=	document.signmeup;
+			var el 		=	document.createElement("input");
+			el.type 	= 	"hidden";
+			el.name 	= 	"specialOfferLandingPage";
+			el.value 	= 	zSpecialOfferPage;
+			zForm.appendChild(el);
+			
+			// create the landingPage field
+			var el 		=	document.createElement("input");
+			el.type 	= 	"hidden";
+			el.name 	= 	"landingPage";
+			el.value 	= 	zLandingPage;
+			zForm.appendChild(el);
+		
+		}
+		
+		if(chosen == true) {
+			// submit form
+			document.signmeup.submit();
+		}
+	}
+}
+
+// fail validation
+if(chosen == false) {
+			document.getElementById('error').innerHTML = 'Whoops! Please select a plan to continue.';
+}
+}
+   
+
+
+//--></script>
+
+<html>
+	<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+        <meta name="robots" content="noindex,nofollow">
+	<head>
+<body class="bar">
+
+	<div id="logo"><a href="#" onClick="window.location.reload()"><img src="/shared/img/cdot.gif"></a></div>
+	<div class="container" id="planSelection">
+    	<div id="hj-offline-head-signup"></div>
+        		<div class="error" id="error"></div>
+            <form action="" method="get" id="signmeup" name="signmeup">
+        	 <input type="hidden" name="mode" value="memberClient"/>
+             <input type="hidden" name="PLANTYPE" value=""/>
+             <input type="hidden" name="SCC" value=""/>
+			            <div id="s-row-laptop">
+
+            	<div class="radio-m" id="0" style="float: left;">
+                                 	<!-- <img src="/shared/css/img/radio-gray.png" width="13" height="13"> -->
+                    <input disabled type="radio" name="PROMO" value="BMB03000USD0" />
+                                 </div>
+             	<div id="s-offline-description-laptop">
+					<div id="planHead">FREE <strong>MEMBERSHIP</strong></div><p>Get connected at free Wi-Fi hotspots worldwide. </p>
+                </div>
+
+            </div>
+                        <div id="s-row-laptop">
+            	<div class="radio-m" id="1" style="float: left;">
+                                 	<!-- <img src="/shared/css/img/radio-gray.png" width="13" height="13"> -->
+                    <input disabled type="radio" name="PROMO" value="BUG03USD1" />
+                                 </div>
+             	<div id="s-offline-description-laptop">
+					<div id="planHead">BOINGO <strong>MONTHLY</strong></div><p>Free hotspots, plus monthly access to Boingo Wi-Fi hotspots for as low as $9.95 USD per month. Connect at airports, hotels, coffee shops and more!</p>
+
+                </div>
+
+            </div>
+                        <div id="s-row-laptop">
+            	<div class="radio-m" id="2" style="float: left;">
+                                 	<!-- <img src="/shared/css/img/radio-gray.png" width="13" height="13"> -->
+                    <input disabled type="radio" name="PROMO" value="AYM01795USD0" />
+                                 </div>
+             	<div id="s-offline-description-laptop">
+
+					<div id="planHead">BOINGO <strong>AsYouGo</strong></div><p>Get free hotspots PLUS access to 325,000 Boingo locations on a pay-as-you-go basis.</p>
+                </div>
+
+            </div>
+                        
+            <!-- new radio-->
+            
+			<div id="s-row-laptop">
+             	<div id="s-description-laptop">
+					<div id="planHead"><strong>HAVE AN ACCOUNT?</strong> <a href="#" onClick="external.credentialBox();" style="text-decoration: underline">Click here</a>
+
+                </div>
+                <br clear="all" />
+            </div>
+            
+            <!-- new radio -->            
+            	</div>
+    
+</form>
+
+     
+</body>
+</html>

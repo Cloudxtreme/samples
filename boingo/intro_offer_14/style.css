@@ -1,0 +1,68 @@
+.innerContentWrapper {
+	background-image: url(img/bg_top_banner.png);
+	background-repeat: repeat-x;
+}
+
+.mainWrapper {
+    margin: 0 auto 15px;
+    width: 768px;
+}
+
+.details ul {
+	list-style: url(../intro_offer_11/img/bullet.gif);
+	padding-left:2em;
+}
+
+.details ul li {
+	padding-bottom:10px;
+}
+
+table.airports,
+table.partner_hotspots {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:#999;
+	width:100%;
+}
+
+td.airport_code {
+	padding-right:5px;
+}
+
+td.airport_name {
+	/*padding-right:85px;*/
+}
+
+table.partner_hotspots td {
+	width:33%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size:24px;
+	color: #d52b1e;
+}
+
+h3 {
+	font-size:18px;
+	color: #d52b1e;
+}
+
+h4 {
+	font-size:18px;
+	color:#999;
+	margin:0;
+	padding:25px 0 10px 0;
+	border-top:1px solid #ccc;
+}
+
+h5 {
+	font-size:14px;
+	color:#666666;
+	margin:10px 0 10px 0;
+	padding:3px;
+	background-color:#eaeaea;
+}

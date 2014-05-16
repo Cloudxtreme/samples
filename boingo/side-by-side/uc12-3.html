@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" >
+<html>
+<head>
+	<!-- Membership Client -->
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<title>Boingo Wireless | Signup Set Up Your Account</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+	<meta name="keywords" content="wireless plan,wireless internet provider,wireless internet access,wireless internet connection,wireless internet service provider,wireless internet card,compare wireless plan,best wireless plan,broadband wireless internet,mobile internet access,mobile internet service,wireless service plan,mobile wireless plan,wireless internet company,mobile internet connection,free wireless hotspots,wi fi service,wifi service,wireless mobile internet service,wireless interet plan,pay as you go wireless plan,free wi fi hotspots">
+	<meta name="description" content="Wireless Plans at Boingo. Specializing in wireless internet providers, wireless internet access, wireless internet connections and wireless internet service providers">
+	<meta name="robots" content="index,follow">
+	<!-- Wireless Plan, Wireless Internet Provider, Wireless Internet Access, Wireless Internet Connection, Wireless Internet Service Provider -->
+	<script language="JavaScript" src="http://10.1.2.131:8888/shared/jscript/SignupScriptTop.js"></script>
+	
+	<link rel="icon" type="image/ico" href="http://10.1.2.131:8888/shared/img/b.ico">
+
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/ClientDetect.js"></script>
+
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/resDetect.js"></script>
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="http://10.1.2.131:8888/shared/jscript/mouseovers.js"></script>
+	<script src="http://10.1.2.131:8888/signup/jscript/jquery.periodicalupdater.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">viewportAndCss(getAgent())</script>
+<!--[if IE]>
+    <script type="text/javascript">viewportAndCssIE(getAgent())</script>
+<![endif]-->
+
+	
+	
+
+
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="containerId" content="accountData">
+
+	
+
+
+<script type="text/javascript" src="jscript/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="jscript/jquery.maskedinput-1.2.2.min.js"></script>
+</head>
+<body  class="bar" id="location" onLoad="">
+<!-- client -->
+	<div id="logo"><img src="http://10.1.2.131:8888/shared/img/cdot.gif"></div>
+    
+	<div class="container" id="accountData">
+		<script type="text/javascript">
+<!--
+	$(function(){
+		var token=(new Date()).getTime();
+
+		
+		
+		// Hide Billing Zip Code or CVV based on country
+		var toggleBillingOptions = function(e){
+			var country = $('#billingCountry').val();
+			//alert("Country is " + country);
+			if (country == "US") {
+				// US is selected, use zip
+				$('#zipCodeDiv').show();
+				$('#securityCodeDiv').hide();
+			} else {
+				// non-US is selected, use CVV
+				$('#zipCodeDiv').hide();
+				$('#securityCodeDiv').show();
+			}
+		};
+		toggleBillingOptions.call();
+		//$('#securityCodeDiv').hide();
+		$('#billingCountry').change(toggleBillingOptions);
+		
+		
+		
+			
+	});
+
+	
+	
+//-->
+
+</script>
+		
+<div id="left_content_area_sub" style="float: right;">
+	<div class="boingo_sub_contentBox_head"><h2>Set Up Your Account</h2></div>
+	<div class="boingo_sub_contentBox_content">
+	
+		<form id="command" name="accountDataForm" action="/signup/AccountData.app" method="post">
+			
+			<div class="error"></div>
+			
+			<div class="bluebox">
+				
+					
+					
+					
+						
+
+
+
+
+	<h5>Contact Information</h5>
+
+	<div class="whitebox">
+        <div class="formRow">				
+		<div class="formlabel">*First Name</div>
+  				<div class="fieldnotecontainer">
+  					<div class="formfield"><input id="contactFirstName" name="contactFirstName" tabindex="1" type="text" value="" maxlength="50"/></div>
+  					<div class="formnote"><p></p></div>
+  					<div class="ClearBoth"></div>
+  				</div>
+  				<div class="ClearBoth"></div>
+
+		</div>
+ 		<div class="formRow">	
+		<div class="formlabel">*Last Name</div>
+  				<div class="fieldnotecontainer">
+  					<div class="formfield"><input id="contactLastName" name="contactLastName" tabindex="2" type="text" value="" maxlength="50"/></div>
+  					<div class="formnote"><p></p></div>
+  					<div class="ClearBoth"></div>
+  				</div>
+  				<div class="ClearBoth"></div>
+
+		</div>
+		<div class="formRow">	
+ 		<div class="formlabel">*Username</div>
+  				<div class="fieldnotecontainer">
+  					<div class="formfield"><input id="username" name="username" style="text-transform:lowercase" tabindex="3" type="text" value="" maxlength="255"/></div>
+  					<div class="formnote">Please enter a valid email address as your username.</div>
+  					<div class="ClearBoth"></div>
+  				</div>
+
+  				<div class="ClearBoth"></div>
+		</div>
+ 		<div class="formRow">
+		<div class="formlabel">*Password</div>
+  				<div class="fieldnotecontainer">
+  					<div class="formfield"><input id="password" name="password" tabindex="4" type="password" value="" maxlength="16"/></div>
+  					<div class="formnote">Your password must contain at least 6 characters.</div>
+  					<div class="ClearBoth"></div>
+
+  				</div>
+  				<div class="ClearBoth"></div>
+		</div>
+		<div class="formRow">	
+		<div class="formlabel">*Confirm Password</div>
+  				<div class="fieldnotecontainer">
+  					<div class="formfield"><input id="confirmPassword" name="confirmPassword" tabindex="5" type="password" value="" maxlength="16"/></div>
+  					<div class="formnote"><p></p></div>
+  					<div class="ClearBoth"></div>
+
+  				</div>
+  				<div class="ClearBoth"></div>
+ 		</div>
+	</div>
+			
+
+						
+
+
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	window.open(url,"cvvv2","resizable=no,status=yes,scrollbars=yes,width=400,height=500");
+}
+
+// -->
+</script>
+
+      <h5>Credit Card Information</h5>
+      <span style="white-space: nowrap;">
+
+        <h5>We accept
+           <img src="http://10.1.2.131:8888/shared/img/logo_ccVisa.gif">
+           <img src="http://10.1.2.131:8888/shared/img/logo_ccMC.gif">
+           
+             <img src="http://10.1.2.131:8888/shared/img/logo_ccAmex.gif">
+             <img src="http://10.1.2.131:8888/shared/img/logo_ccDiscover.gif">
+             <img src="http://10.1.2.131:8888/shared/img/jcb2.gif">
+           
+         </h5>
+       </span>
+       
+      <div class="whitebox">
+
+        <div class="formRow">
+          <div class="formlabel">*Number</div>
+          <div class="fieldnotecontainer">
+            <div class="formfield"><input id="cardNumber" name="cardNumber" tabindex="9" type="text" value="" maxlength="16"/></div>
+            <div class="formnote"><p></p></div>
+            <div class="ClearBoth"></div>
+          </div>
+          <div class="ClearBoth"></div>
+
+        </div>
+      
+        <div class="formRow" id="cardExprRow">
+          <div class="formlabel">*Expiration</div>
+          <div class="fieldnotecontainer">
+            <div class="formfield"><p>Month</p>
+              <select id="cardExpMonth" name="cardExpMonth" tabindex="10">        
+                <option value="1">01</option>
+                <option value="2">02</option>
+
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8" selected="selected">08</option>
+
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+               <p id="cardExprYearDesc">Year</p>
+
+               <select id="cardExprYear" name="cardExprYear" tabindex="11">
+                 <option value="2010" selected="selected">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option>
+               </select>
+             </div> 
+            <div class="formnote"><p></p></div>
+
+            <div class="ClearBoth"></div>
+          </div>
+          <div class="ClearBoth"></div>
+        </div>
+      
+        <div class="formRow">
+          <div class="formlabel">*Country</div>
+          <div class="fieldnotecontainer">
+            <div class="formfield">
+
+              <select id="billingCountry" name="billingCountry" tabindex="12">
+                 <option value="US" selected="selected">United States of America</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia-Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D'Ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="TP">East Timor</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">pia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Island</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard and McDonald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao People's Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libyan Arab Jamahiriy</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macau</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="FX">Metropolitan France</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia and Dependencies</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Islands</option><option value="MP">Northern Mariana Islands</option><option value="KP">North Korea</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papau New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="SH">Saint Helena</option><option value="KN">St. Kitts and Nevis</option><option value="LC">St. Lucia</option><option value="PM">St. Pierre and Miquelon</option><option value="VC">St. Vincent and Grenadine</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svaldbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syrian Arab Republic</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="UM">U.S. Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="VI">Virgin Islands</option><option value="WF">Wallis and Futuna Islands</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="YU">Yugoslavia</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option>
+
+               </select>
+            </div>
+            <div class="formnote"></div>
+            <div class="ClearBoth"></div>
+          </div>
+          <div class="ClearBoth"></div>
+        </div>
+
+		<div id="zipCodeDiv">      
+        <div class="formRow">
+
+          <div class="formlabel">*ZIP/Postal Code</div>
+          <div class="fieldnotecontainer">
+            <div class="formfield"><input id="billingZip" name="billingZip" tabindex="13" type="text" value="" maxlength="60"/></div>
+            <div class="formnote">Required for US addresses only</div>
+            <div class="ClearBoth"></div>
+          </div>
+          <div class="ClearBoth"></div>
+        </div>
+
+        </div>
+
+  		<div id="securityCodeDiv">
+        <div class="formRow">
+          <div class="formlabel">*CVV2 <span class="cvvii"><a href="javascript: popitup('http://10.1.2.131:8888/shared/cvv2/index.php');">What is CVV2?</a></span></div>
+          <div class="fieldnotecontainer">
+            <div class="formfield"><input id="cardSecurityCode" name="cardSecurityCode" tabindex="14" type="text" value="" maxlength="4"/></div>
+            <div class="formnote">Required for addresses outside of the US</div>
+
+            <div class="ClearBoth"></div>
+          </div>
+          <div class="ClearBoth"></div>
+        </div>
+        </div>
+        
+        
+        
+      </div>
+      
+      
+					
+					
+				
+				
+				<div class="caption">Fields marked with an * are required.</div>
+				
+				
+					
+							<div class="backButton" id="bottom-button-container">
+
+								<button id="nextButton" value="submit" tabindex="15" class="submitBtn r" type="submit"><span>SUBMIT</span></button>
+							</div>
+					
+					
+				
+				<br clear='all' />
+			</div>
+		</form>
+	</div>
+	<div class="boingo_sub_contentBox_foot">&nbsp;</div>
+</div>
+<div class="ClearBoth"></div>
+
+	</div>	
+</body>
+</html>
