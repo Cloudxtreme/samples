@@ -5,7 +5,7 @@ $(function(){
 		// for the rest of the script to work
 		var mouseoverClass = 'submitBtnHover'; // mouseover
 		var mouseoutClass = 'mouseleave'; // mouseout
-		var mouseclickClass = 'submitBtnDown'; // click
+		var mouseclickClass = 'submitBtnDown'; // click  
 		
 		// remove onmouseclick class on doc load (if it's there)
 		$('.submitBtn').removeClass(mouseclickClass);
@@ -15,12 +15,12 @@ $(function(){
 			$(this).addClass(mouseclickClass);
 			$(this).removeClass(mouseoverClass);
 			$(this).removeClass(mouseoutClass);
-			//alert("testing");
+			//alert("testing");  
 		})
 		
 		// onmouseenter
 		$('.submitBtn').mouseenter(function(){
-			// $(this).addClass(mouseclickClass);
+			// $(this).addClass(mouseclickClass);  
 			$(this).addClass(mouseoverClass);
 			$(this).removeClass(mouseoutClass);
 		})

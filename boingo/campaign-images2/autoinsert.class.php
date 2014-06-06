@@ -20,7 +20,7 @@ echo mysql_error();
 return false;
 }
 }
- 
+// 
 function iInsert($table, $postData = array()){
 $q = "DESC $table";
 $q = mysql_query($q);

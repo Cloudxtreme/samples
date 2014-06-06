@@ -5,7 +5,7 @@ function copy_images_from_source_to_target($source, $target) {
 			if ($handle = opendir($source)) {
 		
 				while (false !== ($file = readdir($handle))) {
-					// does not equal . or .. (directory elements) and name includes a period
+					// does not equal . or .. (directory elements) and name includes a period 
 					if ($file != "." && $file != ".." && preg_match('/\./',$file)!=0 ) {
 						
 						// copying files from my aero repository to a local directory for easier access

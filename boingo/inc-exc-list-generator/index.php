@@ -1,7 +1,7 @@
 <?php
 
 function print_array_inside_textarea($arr){
-	$arr = array_unique($arr); /* added to remove duplicate entries */
+	$arr = array_unique($arr); /* added to remove duplicate entries     */
 	natcasesort($arr);
 	foreach ($arr as $element) {
 		echo $element . "\r\n";

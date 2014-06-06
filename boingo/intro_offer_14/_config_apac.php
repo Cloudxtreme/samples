@@ -11,7 +11,7 @@ $signup_url = 'https://c01.client.boingo.com/signup/SignupStart.app?PROMO='.$pro
 // append param 'landingPage' if it exists
 $signup_url = appendParamIfExists('landingPage', $signup_url);
 
-// template elements
+// template elements    
 
 $template_plan_price = 11.95;
 $template_currency_denomination = '$';

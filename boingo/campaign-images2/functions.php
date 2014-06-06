@@ -2,7 +2,7 @@
 
 function connectToDB($con){
 	
-	// very crude, connects to DB
+	// very crude, connects to DB   
 	// $con argument = mysql_connect('localhost', 'cms', 'w0nd3rful');
 	
 	if (!$con) {
