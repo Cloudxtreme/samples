@@ -43,16 +43,16 @@ $(document).ready(function(){
 }) // end of document ready
 </script>
 
-</head>
+</head> 
 
 <body class="<?=$language_css?>">
 
-<!-- header start -->
+<!-- header start, this is a newly added comment-->
 <div class="header">
     <div class="inner">
     	<div class="logo"><img src="https://c01.client.boingo.com/shared/css/img/logoWhiteTop.gif" border="0" alt="" /></div>
     
-    	<div class="userControls">
+    	<div class='userControls'>
         
         <div class="control1">            
             <select name="language" id="language">
