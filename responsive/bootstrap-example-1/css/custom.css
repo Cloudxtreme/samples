@@ -1,0 +1,29 @@
+/* brochure front page */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.brochure-hp h1,
+.brochure-hp h2 {
+	margin:0;
+	padding:0;
+}
+
+.brochure-hp-top {
+	height:20%;
+	background-color:#ffcc00;
+}
+
+.brochure-hp-middle {
+	height:40%;
+	background: url(../img/lecture-hall.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.brochure-hp-bottom {
+	height:40%;
+	background-color:#990000;
+}
+
