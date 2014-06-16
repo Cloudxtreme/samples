@@ -1,9 +1,57 @@
-/* brochure front page */
+/* h tags and fonts */
 
-* {
-	margin:0;
-	padding:0;
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Adobe Calson Pro", arial, sans-serif;
 }
+
+/* aside styles */
+
+.aside-type1 {
+	color: #990000;
+	margin: 0.5em;
+	padding: 0.5em;
+	font-size: 1.3em;
+	border-top: 2px dotted #990000;
+	border-bottom: 2px dotted #990000;
+	line-height: 100%;
+}
+
+.aside-type1 span {
+	font-size:1.5em;
+	color: #ffcc00;
+}
+
+/* class profile */
+
+#class-profile img1,
+#class-profile img2,
+#class-profile img3 {
+	position:relative;
+	/*height: height is calculated via javascript*/
+}
+
+#class-profile .img1 {
+	background: url(../img/professor.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#class-profile .img2 {
+	background: url(../img/student.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#class-profile .img3 {
+	background: url(../img/professor-student.jpg) no-repeat center;
+	background-size: cover;
+}
+
+#about-img1 {
+	background: url(../img/student2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+
+/* Brochure ********************************************* */
 
 .brochure-hp h1,
 .brochure-hp h2 {
@@ -12,13 +60,13 @@
 }
 
 .brochure-hp-top {
-	height:20%;
+	/*height:20%;*/
 	background-color:#ffcc00;
 }
 
 .brochure-hp-middle {
 	position:relative;
-	height:40%;
+	/*height:40%;*/
 	background: url(../img/lecture-hall.jpg) no-repeat center;
 	background-size: cover;
 }
@@ -32,7 +80,7 @@
 
 .brochure-hp-bottom {
 	position:relative;
-	height:40%;
+	/*height:40%;*/
 	background-color:#990000;
 }
 
@@ -42,4 +90,41 @@
 	top: 10px;
 	right: 5%;
 }
+
+.top-employers {
+	background-color: #fc9;
+}
+
+.global-experience {
+	background-color: #d96d00;
+	color: white;
+}
+
+.inner {
+	padding: 15px;
+}
+
+/*
+.row {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+*/
+
+/*
+.row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+*/
+
 

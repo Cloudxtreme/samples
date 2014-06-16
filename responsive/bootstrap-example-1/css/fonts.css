@@ -1,0 +1,8 @@
+@font-face{ 
+	font-family: 'Adobe Calson Pro';
+	src: url('../fonts/adobe_caslon_pro-webfont.eot');
+	src: url('../fonts/adobe_caslon_pro-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/adobe_caslon_pro-webfont.woff') format('woff'),
+	     url('../fonts/adobe_caslon_pro-webfont.ttf') format('truetype'),
+	     url('../fonts/adobe_caslon_pro-webfont.svg#webfont') format('svg');
+}
