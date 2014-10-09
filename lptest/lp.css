@@ -1,0 +1,29 @@
+.lp-test {
+	overflow: hidden;
+}
+
+.lp-test .zone1,
+.lp-test .zone2 {
+	float: left;
+	width: 400px;
+}
+
+/* generated snippet from http://www.colorzilla.com/gradient-editor/ */
+.lp-test .zone1 {
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(255,255,255,0.3) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(255,255,255,0.3))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.3) 0%,rgba(255,255,255,0.3) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4dffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.border-right {
+	border-right: 1px solid black;
+}
+
+.border-left {
+	border-left: 1px solid black;
+}
+
